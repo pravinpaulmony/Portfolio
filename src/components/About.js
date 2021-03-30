@@ -20,7 +20,7 @@ const About = () => {
             <MDBCardTitle className='card-title'>
                 <strong className='font-weight-bold white-text'>PRAVIN</strong><hr />
                  <strong className='font-weight-bold cyan-text'>Fullstack Web Developer</strong>
-            </MDBCardTitle>
+            </MDBCardTitle> 
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
