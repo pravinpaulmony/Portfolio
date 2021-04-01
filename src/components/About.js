@@ -1,12 +1,17 @@
 import React from "react";
-import { MDBContainer, MDBCard, MDBCardTitle, MDBCardImage, MDBCardText, MDBCardBody, MDBRow, MDBCol, MDBView, MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBMask } from "mdbreact";
+import { MDBContainer, MDBCard, MDBCardTitle, MDBCardBody, MDBRow, MDBCol, MDBView, MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBMask } from "mdbreact";
 
 
 
 const About = () => {
   return (
-    <MDBContainer fluid className="my-3">
-     
+    <>
+  <MDBView src={process.env.PUBLIC_URL + '/cover1.jpg'}>
+      <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center" >
+        <h1>Welcome To My Personal Portfolio</h1>
+      </MDBMask>
+    </MDBView>
+<MDBContainer fluid className="my-5">
     <MDBRow>
 
     <MDBCol md='1'></MDBCol>
@@ -14,7 +19,7 @@ const About = () => {
     <MDBCol md='3'>
         <MDBCard wide cascade color="black">
           <MDBView cascade waves>
-            <img className='rounded mx-auto' src={process.env.PUBLIC_URL + '/profile.jpg'}  alt='Pravin'  style={{height: '350px', width: 'auto'}}/>
+            <img className='rounded mx-auto' src={process.env.PUBLIC_URL + '/profile.jpg'}  alt='Pravin'  style={{height: 'auto', width: '200px'}}/>
           </MDBView>
           <MDBCardBody cascade className='text-center'>
             <MDBCardTitle className='card-title'>
@@ -92,6 +97,7 @@ const About = () => {
 
     </MDBRow>
     </MDBContainer>
+    </>
   );
 }
 
