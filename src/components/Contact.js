@@ -5,7 +5,6 @@ import {
   MDBCol,
   MDBIcon,
   MDBBtn,
-  MDBView,
   MDBContainer,
   MDBCard,
   MDBCardBody,
@@ -30,7 +29,7 @@ class Contact extends React.Component {
                     delay=".3s"
                     className="white-text text-center "
                   >
-                    <h4 className="h4-responsive font-weight-bold white-text">
+                    <h4 className="h4-responsive font-weight-bolder white-text rgba-black-strong p-3">
                     Looking forward to hear from you . . .
                     </h4>
                     <hr className="hr-light" />
@@ -67,7 +66,7 @@ class Contact extends React.Component {
                           rows="5"
                         />
                         <div className="text-center mt-4 black-text">
-                          <MDBBtn color="indigo">Send</MDBBtn>
+                          <MDBBtn color="indigo"><MDBIcon far icon="paper-plane" /> Send</MDBBtn>
                         </div>
                       </MDBCardBody>
                     </MDBCard>

@@ -4,6 +4,8 @@ import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import ProjectsPage from './components/Projects';
+import Technologies from './components/Technologies';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
@@ -22,6 +24,14 @@ const routes = [
   {
     path: "/Contact",
     main: () => <Contact />
+  },
+  {
+    path: "/Projects",
+    main: () => <ProjectsPage />
+  },
+  {
+    path: "/Technologies",
+    main: () => <Technologies />
   }
 ];
 
