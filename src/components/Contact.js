@@ -13,41 +13,34 @@ import {
   MDBAnimation
 } from "mdbreact";
 import "./Contact.css";
+import ListGroupPage from './Contact_list';
 
 class Contact extends React.Component {
-  state = {
-    collapseID: ""
-  };
-
-  toggleCollapse = collapseID => () =>
-    this.setState(prevState => ({
-      collapseID: prevState.collapseID !== collapseID ? collapseID : ""
-    }));
 
   render() {
-
     return (
-      <div id="classicformpage">
-        
-        <MDBView src={process.env.PUBLIC_URL + '/cont.jpg'}>
-          <MDBMask className="d-flex justify-content-center align-items-center gradient">
-            <MDBContainer>
+      <>
+          <MDBMask className="pt-5 justify-content-center align-items-center gradient">
+          <MDBContainer>
               <MDBRow>
-                <MDBAnimation
-                  type="fadeInLeft"
-                  delay=".3s"
-                  className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
-                >
-                  <h3 className="h3-responsive font-weight-bold">
-                  Looking forward to hear from you . . .
-                  </h3>
-                  <hr className="hr-light" />
-                  
-                </MDBAnimation>
 
-                <MDBCol md="6" xl="5" className="mb-4">
-                  <MDBAnimation type="fadeInRight" delay=".3s">
-                    <MDBCard id="classic-card">
+              <MDBCol lg="6" md="12" sm="12" className="my-5">
+                <MDBAnimation
+                    type="fadeInLeft"
+                    delay=".3s"
+                    className="white-text text-center "
+                  >
+                    <h4 className="h4-responsive font-weight-bold white-text">
+                    Looking forward to hear from you . . .
+                    </h4>
+                    <hr className="hr-light" />
+                  <ListGroupPage /> 
+                  </MDBAnimation>
+              </MDBCol>
+
+               <MDBCol lg="6" md="12" sm="12" className="my-5">
+               <MDBAnimation type="fadeInRight" delay=".3s">
+                    <MDBCard id="classic-card" className="rgba-black-strong">
                       <MDBCardBody className="white-text">
                         <h3 className="text-center white-text">
                           <MDBIcon icon="envelope" /> Contact Me
@@ -79,13 +72,13 @@ class Contact extends React.Component {
                       </MDBCardBody>
                     </MDBCard>
                   </MDBAnimation>
-                </MDBCol>
+               </MDBCol>
+
               </MDBRow>
             </MDBContainer>
           </MDBMask>
-        </MDBView>
+      </>
 
-      </div>
     );
   }
 }
