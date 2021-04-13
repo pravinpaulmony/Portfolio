@@ -27,12 +27,6 @@ class ProjectsPage extends Component {
         else if(nr==="weather"){
             this.setState({ title: "WEATHER" });
         }
-        else if(nr==="music_band"){
-            this.setState({ title: "MUSIC BAND" });
-        }
-        else if(nr==="books_library"){
-            this.setState({ title: "BOOK LIBRARY" });
-        }
         else if(nr==="college"){
             this.setState({ title: "COLLEGE PROJECTS" });
         }
@@ -70,15 +64,15 @@ class ProjectsPage extends Component {
           
           <MDBCol md="4" xl="3" className="mb-4">
           <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+          <MDBCarousel activeItem={1} length={1} showControls={false} showIndicators={false} className="z-depth-1">
             <MDBCarouselInner>
                 <MDBCarouselItem itemId="1">
                 <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
+                    <img className="d-block w-100" src={process.env.PUBLIC_URL + '/proj.jpg'} alt="First slide" style={ {height:'300px'}} />
                 <MDBMask overlay="black-light" />
                 </MDBView>
                 </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
+                {/* <MDBCarouselItem itemId="2">
                 <MDBView>
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-strong" />
@@ -89,7 +83,7 @@ class ProjectsPage extends Component {
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-slight" />
                 </MDBView>
-                </MDBCarouselItem>
+                </MDBCarouselItem> */}
             </MDBCarouselInner>
             </MDBCarousel>
             <MDBCardBody className="pb-0 white-text">
@@ -105,15 +99,15 @@ class ProjectsPage extends Component {
           
           <MDBCol md="4" xl="3" className="mb-4">
           <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+          <MDBCarousel activeItem={1} length={1} showControls={false} showIndicators={false} className="z-depth-1">
             <MDBCarouselInner>
                 <MDBCarouselItem itemId="1">
                 <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
+                    <img className="d-block w-100" src={process.env.PUBLIC_URL + '/proj.jpg'} alt="First slide" style={ {height:'300px'}} />
                 <MDBMask overlay="black-light" />
                 </MDBView>
                 </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
+                {/* <MDBCarouselItem itemId="2">
                 <MDBView>
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-strong" />
@@ -124,7 +118,7 @@ class ProjectsPage extends Component {
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-slight" />
                 </MDBView>
-                </MDBCarouselItem>
+                </MDBCarouselItem> */}
             </MDBCarouselInner>
             </MDBCarousel>
             <MDBCardBody className="pb-0 white-text">
@@ -140,15 +134,15 @@ class ProjectsPage extends Component {
           
           <MDBCol md="4" xl="3" className="mb-4">
           <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+          <MDBCarousel activeItem={1} length={1} showControls={false} showIndicators={false} className="z-depth-1">
             <MDBCarouselInner>
                 <MDBCarouselItem itemId="1">
                 <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
+                    <img className="d-block w-100" src={process.env.PUBLIC_URL + '/proj.jpg'} alt="First slide" style={ {height:'300px'}} />
                 <MDBMask overlay="black-light" />
                 </MDBView>
                 </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
+                {/* <MDBCarouselItem itemId="2">
                 <MDBView>
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-strong" />
@@ -159,7 +153,7 @@ class ProjectsPage extends Component {
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-slight" />
                 </MDBView>
-                </MDBCarouselItem>
+                </MDBCarouselItem> */}
             </MDBCarouselInner>
             </MDBCarousel>
             <MDBCardBody className="pb-0 white-text">
@@ -175,15 +169,15 @@ class ProjectsPage extends Component {
           
           <MDBCol md="4" xl="3" className="mb-4">
           <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+          <MDBCarousel activeItem={1} length={1} showControls={false} showIndicators={false} className="z-depth-1">
             <MDBCarouselInner>
                 <MDBCarouselItem itemId="1">
                 <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
+                    <img className="d-block w-100" src={process.env.PUBLIC_URL + '/proj.jpg'} alt="First slide" style={ {height:'300px'}} />
                 <MDBMask overlay="black-light" />
                 </MDBView>
                 </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
+                {/* <MDBCarouselItem itemId="2">
                 <MDBView>
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-strong" />
@@ -194,7 +188,7 @@ class ProjectsPage extends Component {
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-slight" />
                 </MDBView>
-                </MDBCarouselItem>
+                </MDBCarouselItem> */}
             </MDBCarouselInner>
             </MDBCarousel>
             <MDBCardBody className="pb-0 white-text">
@@ -210,15 +204,15 @@ class ProjectsPage extends Component {
           
           <MDBCol md="4" xl="3" className="mb-4">
           <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+          <MDBCarousel activeItem={1} length={1} showControls={false} showIndicators={false} className="z-depth-1">
             <MDBCarouselInner>
                 <MDBCarouselItem itemId="1">
                 <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
+                    <img className="d-block w-100" src={process.env.PUBLIC_URL + '/proj.jpg'} alt="First slide" style={ {height:'300px'}} />
                 <MDBMask overlay="black-light" />
                 </MDBView>
                 </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
+                {/* <MDBCarouselItem itemId="2">
                 <MDBView>
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-strong" />
@@ -229,7 +223,7 @@ class ProjectsPage extends Component {
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-slight" />
                 </MDBView>
-                </MDBCarouselItem>
+                </MDBCarouselItem> */}
             </MDBCarouselInner>
             </MDBCarousel>
             <MDBCardBody className="pb-0 white-text">
@@ -242,19 +236,17 @@ class ProjectsPage extends Component {
             </MDBAnimation>
           </MDBCol>
           
-
-          
           <MDBCol md="4" xl="3" className="mb-4">
           <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+          <MDBCarousel activeItem={1} length={1} showControls={false} showIndicators={false} className="z-depth-1">
             <MDBCarouselInner>
                 <MDBCarouselItem itemId="1">
                 <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
+                    <img className="d-block w-100" src={process.env.PUBLIC_URL + '/proj.jpg'} alt="First slide" style={ {height:'300px'}} />
                 <MDBMask overlay="black-light" />
                 </MDBView>
                 </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
+                {/* <MDBCarouselItem itemId="2">
                 <MDBView>
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-strong" />
@@ -265,111 +257,7 @@ class ProjectsPage extends Component {
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-slight" />
                 </MDBView>
-                </MDBCarouselItem>
-            </MDBCarouselInner>
-            </MDBCarousel>
-            <MDBCardBody className="pb-0 white-text">
-              <a href="#!" className="orange-text">
-                <h4 className="font-weight-bold mt-2 mb-3"><MDBIcon far icon="file-code" className="mr-2" />MUSIC BAND</h4>
-              </a>
-              <h5 className="font-weight-bold mb-3">Music Band Web Design</h5>
-              <MDBBtn size="sm" color="indigo" onClick={this.toggle("music_band")}>More Details<MDBIcon far icon="arrow-alt-circle-right" className="ml-2"/></MDBBtn>
-            </MDBCardBody>
-            </MDBAnimation>
-          </MDBCol>
-
-
-          <MDBCol md="4" xl="3" className="mb-4">
-          <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
-            <MDBCarouselInner>
-                <MDBCarouselItem itemId="1">
-                <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
-                <MDBMask overlay="black-light" />
-                </MDBView>
-                </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
-                <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
-                <MDBMask overlay="black-strong" />
-                </MDBView>
-                </MDBCarouselItem>
-                <MDBCarouselItem itemId="3">
-                <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
-                <MDBMask overlay="black-slight" />
-                </MDBView>
-                </MDBCarouselItem>
-            </MDBCarouselInner>
-            </MDBCarousel>
-            <MDBCardBody className="pb-0 white-text">
-              <a href="#!" className="orange-text">
-                <h4 className="font-weight-bold mt-2 mb-3"><MDBIcon far icon="file-code" className="mr-2" />BOOK LIBRARY</h4>
-              </a>
-              <h5 className="font-weight-bold mb-3">Book Library Website</h5>
-              <MDBBtn size="sm" color="indigo" onClick={this.toggle("books_library")}>More Details<MDBIcon far icon="arrow-alt-circle-right" className="ml-2"/></MDBBtn>
-            </MDBCardBody>
-            </MDBAnimation>
-          </MDBCol>
-
-          <MDBCol md="4" xl="3" className="mb-4">
-          <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
-            <MDBCarouselInner>
-                <MDBCarouselItem itemId="1">
-                <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
-                <MDBMask overlay="black-light" />
-                </MDBView>
-                </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
-                <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
-                <MDBMask overlay="black-strong" />
-                </MDBView>
-                </MDBCarouselItem>
-                <MDBCarouselItem itemId="3">
-                <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
-                <MDBMask overlay="black-slight" />
-                </MDBView>
-                </MDBCarouselItem>
-            </MDBCarouselInner>
-            </MDBCarousel>
-            <MDBCardBody className="pb-0 white-text">
-              <a href="#!" className="orange-text">
-                <h4 className="font-weight-bold mt-2 mb-3"><MDBIcon far icon="file-code" className="mr-2" />COLLEGE STUDENT PROJECTS</h4>
-              </a>
-              <h5 className="font-weight-bold mb-3">Multiple Student Projects</h5>
-              <MDBBtn size="sm" color="indigo" onClick={this.toggle("college")}>More Details<MDBIcon far icon="arrow-alt-circle-right" className="ml-2"/></MDBBtn>
-            </MDBCardBody>
-            </MDBAnimation>
-          </MDBCol>
-          
-
-          <MDBCol md="4" xl="3" className="mb-4">
-          <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
-            <MDBCarouselInner>
-                <MDBCarouselItem itemId="1">
-                <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
-                <MDBMask overlay="black-light" />
-                </MDBView>
-                </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
-                <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
-                <MDBMask overlay="black-strong" />
-                </MDBView>
-                </MDBCarouselItem>
-                <MDBCarouselItem itemId="3">
-                <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
-                <MDBMask overlay="black-slight" />
-                </MDBView>
-                </MDBCarouselItem>
+                </MDBCarouselItem> */}
             </MDBCarouselInner>
             </MDBCarousel>
             <MDBCardBody className="pb-0 white-text">
@@ -384,15 +272,15 @@ class ProjectsPage extends Component {
 
           <MDBCol md="4" xl="3" className="mb-4">
           <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+          <MDBCarousel activeItem={1} length={1} showControls={false} showIndicators={false} className="z-depth-1">
             <MDBCarouselInner>
                 <MDBCarouselItem itemId="1">
                 <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
+                    <img className="d-block w-100" src={process.env.PUBLIC_URL + '/proj.jpg'} alt="First slide" style={ {height:'300px'}} />
                 <MDBMask overlay="black-light" />
                 </MDBView>
                 </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
+                {/* <MDBCarouselItem itemId="2">
                 <MDBView>
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-strong" />
@@ -403,7 +291,7 @@ class ProjectsPage extends Component {
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-slight" />
                 </MDBView>
-                </MDBCarouselItem>
+                </MDBCarouselItem> */}
             </MDBCarouselInner>
             </MDBCarousel>
             <MDBCardBody className="pb-0 white-text">
@@ -419,15 +307,15 @@ class ProjectsPage extends Component {
 
           <MDBCol md="4" xl="3" className="mb-4">
           <MDBAnimation type="zoomIn" delay=".3s">
-          <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+          <MDBCarousel activeItem={1} length={1} showControls={false} showIndicators={false} className="z-depth-1">
             <MDBCarouselInner>
                 <MDBCarouselItem itemId="1">
                 <MDBView>
-                    <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide" style={ {height:'300px'}} />
+                    <img className="d-block w-100" src={process.env.PUBLIC_URL + '/proj.jpg'} alt="First slide" style={ {height:'300px'}} />
                 <MDBMask overlay="black-light" />
                 </MDBView>
                 </MDBCarouselItem>
-                <MDBCarouselItem itemId="2">
+                {/* <MDBCarouselItem itemId="2">
                 <MDBView>
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-strong" />
@@ -438,7 +326,7 @@ class ProjectsPage extends Component {
                     <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide" style={{height:'300px'}} />
                 <MDBMask overlay="black-slight" />
                 </MDBView>
-                </MDBCarouselItem>
+                </MDBCarouselItem> */}
             </MDBCarouselInner>
             </MDBCarousel>
             <MDBCardBody className="pb-0 white-text">

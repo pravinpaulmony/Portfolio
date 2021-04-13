@@ -92,7 +92,7 @@ const About = () => {
             <MDBMask overlay="black-strong" />
             </MDBView>
             <MDBCarouselCaption>
-                <h4 className="h4-responsive">Nature Traveller & Wildlife Explorer <br></br> <hr></hr> Space Researcher <br></br></h4>
+                <h4 className="h4-responsive">Nature Traveller & Wildlife Explorer <br></br> <hr></hr> Space Enthusiast <br></br></h4>
             </MDBCarouselCaption>
             </MDBCarouselItem>
         </MDBCarouselInner>
