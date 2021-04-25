@@ -29,7 +29,7 @@ class ProjectsPage extends Component {
         }
         else if(nr==="stone_soup"){
             this.setState({ title: "STONE SOUP", piclength: 7 });
-            this.setState({ images: ["p2-1.png","p2-2.png","p2-3.png","p2-4.png","p2-5.png","p2-6.png","p2-7.png"] });
+            this.setState({ images: ["p2-1.PNG","p2-2.PNG","p2-3.PNG","p2-4.PNG","p2-5.PNG","p2-6.PNG","p2-7.PNG"] });
             this.setState({ summary: "A ticketing tool for the production users to communicate with the development team and to raise thier issues. Major modules like ticketing system with SLA plan, Task & bug tracking, Timesheet, Email Communication were implemented. " });
             this.setState({ technologies: ["PHP","MYSQL","JQUERY","JAVASCRIPT","LARAVEL","BOOTSTRAP","AWS" ] });
             this.setState({ role: "FULL-STACK DEVELOPER" });
@@ -181,7 +181,7 @@ class ProjectsPage extends Component {
             <MDBCarouselInner>
                 <MDBCarouselItem itemId="1">
                 <MDBView>
-                    <img className="d-block w-100" src={process.env.PUBLIC_URL + 'screenshots/p2.png'} alt="First slide" style={ {height:'300px'}} />
+                    <img className="d-block w-100" src={process.env.PUBLIC_URL + 'screenshots/p2.PNG'} alt="First slide" style={ {height:'300px'}} />
                 <MDBMask overlay="black-light" />
                 </MDBView>
                 </MDBCarouselItem>
