@@ -119,7 +119,7 @@ class ProjectsPage extends Component {
                <h6 className="font-weight-bold text-left mt-4 text-primary">ROLE : <span className="font-weight-bolder text-success">{this.state.role}</span></h6>
               
                {this.state.siteurl!=="" ? (
-               <h6 className="font-weight-bold text-left mt-4 text-primary">URL : <a href={this.state.siteurl} target="_blank" className="font-weight-bolder text-success">{this.state.siteurl}</a></h6> ) : ""}
+               <h6 className="font-weight-bold text-left mt-4 text-primary">URL : <a href={this.state.siteurl} target="_blank" rel="noreferrer" className="font-weight-bolder text-success">{this.state.siteurl}</a></h6> ) : ""}
 
                 <h6 className="font-weight-bold text-left mt-4 text-primary">TECHNOLOGIES USED</h6>
                 <ul className="font-weight-bolder text-left">
@@ -130,7 +130,7 @@ class ProjectsPage extends Component {
 
             </MDBCol>
             <MDBCol size="12" lg="6" md="6" sm="12" xs="12">
-                <MDBCarousel activeItem={1} length={this.state.piclength} showControls={true} showIndicators={false} className="z-depth-1" >
+                <MDBCarousel activeItem={1} length={this.state.piclength} showControls={true} showIndicators={true} className="z-depth-1" >
                   <MDBCarouselInner>
                   {this.state.images.map((item,i) => (
                       <MDBCarouselItem itemId={i+1}>
@@ -258,7 +258,7 @@ class ProjectsPage extends Component {
             </MDBCarousel>
             <MDBCardBody className="pb-0 white-text">
               <a href="#!" className="orange-text">
-                <h4 className="font-weight-bold mt-2 mb-3"><MDBIcon far icon="file-code" className="mr-2" />WEATHER INFORMATION</h4>
+                <h4 className="font-weight-bold mt-2 mb-3"><MDBIcon far icon="file-code" className="mr-2" />WEATHER INFO</h4>
               </a>
               <h5 className="font-weight-bold mb-3">Waether Forecast Tool</h5>
               <MDBBtn size="sm" color="indigo" onClick={this.toggle("weather")}>More Details<MDBIcon far icon="arrow-alt-circle-right" className="ml-2"/></MDBBtn>
@@ -302,7 +302,7 @@ class ProjectsPage extends Component {
             </MDBCarousel>
             <MDBCardBody className="pb-0 white-text">
               <a href="#!" className="orange-text">
-                <h4 className="font-weight-bold mt-2 mb-3"><MDBIcon far icon="file-code" className="mr-2" />MVC</h4>
+                <h4 className="font-weight-bold mt-2 mb-3"><MDBIcon far icon="file-code" className="mr-2" />MVS</h4>
               </a>
               <h5 className="font-weight-bold mb-3">Ecommerce Website For Bicycle Shopping</h5>
               <MDBBtn size="sm" color="indigo" onClick={this.toggle("mvs")}>More Details<MDBIcon far icon="arrow-alt-circle-right" className="ml-2"/></MDBBtn>
