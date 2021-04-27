@@ -1,9 +1,23 @@
-import React from "react";
-import { MDBContainer, MDBCard, MDBCardTitle, MDBCardBody, MDBRow, MDBCol, MDBView, MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBMask, MDBAnimation } from "mdbreact";
+import React, { Component } from "react";
+import { MDBContainer, MDBCard, MDBCardTitle, MDBCardBody, MDBRow, MDBCol, MDBView, MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBMask, MDBAnimation,MDBBtn, MDBModal, MDBModalBody, MDBModalFooter,MDBIcon,Link,MDBBtnGroup } from "mdbreact";
+import { Document,Page,pdfjs } from "react-pdf";
+import cv from './cv.pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
+class About extends Component {
 
-const About = () => {
+  state = { numPages: null, pageNumber: 1, modal: false };
+
+  toggle = () => {
+    this.setState({
+      modal: !this.state.modal
+    });
+  }
+
+  render() {
+      const { pageNumber } = this.state;
+
   return (
     <>
   <MDBView src={process.env.PUBLIC_URL + '/cover1.jpg'}>
@@ -14,6 +28,21 @@ const About = () => {
       </MDBMask>
     </MDBView>
 <MDBContainer fluid className="my-5">
+
+      <MDBModal className="resume" isOpen={this.state.modal} toggle={this.toggle} fullHeight position="right" size="lg">
+        <MDBModalBody className="resume scrollbar">
+          <Document file={cv}  >
+            <Page pageNumber={pageNumber} />
+          </Document>
+        </MDBModalBody>
+        <MDBModalFooter>
+          <MDBBtnGroup size="sm">
+            <MDBBtn color="primary"><Link to={process.env.PUBLIC_URL + '/cv.pdf'} target="_blank" download className="text-white">Download&nbsp;&nbsp;<MDBIcon icon="download" /></Link></MDBBtn>
+            <MDBBtn color="dark" onClick={this.toggle}>Close&nbsp;&nbsp;<MDBIcon icon="times" /></MDBBtn>
+          </MDBBtnGroup>
+        </MDBModalFooter>
+      </MDBModal>
+
     <MDBRow>
 
     <MDBCol md='1'></MDBCol>
@@ -27,7 +56,8 @@ const About = () => {
           <MDBCardBody cascade className='text-center'>
             <MDBCardTitle className='card-title'>
                 <strong className='font-weight-bold white-text'>PRAVIN</strong><hr />
-                 <strong className='font-weight-bold cyan-text'>Fullstack Web Developer</strong>
+                 <strong className='font-weight-bold cyan-text'>Fullstack Web Developer</strong><br></br>
+                 <MDBBtn color="indigo" onClick={this.toggle}>RESUME&nbsp;&nbsp;<MDBIcon far icon="file-pdf" /></MDBBtn>
             </MDBCardTitle> 
           </MDBCardBody>
         </MDBCard>
@@ -103,6 +133,7 @@ const About = () => {
     </MDBContainer>
     </>
   );
+}
 }
 
 export default About;

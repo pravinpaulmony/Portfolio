@@ -146,7 +146,7 @@ class ProjectsPage extends Component {
               </MDBRow>
             </MDBModalBody>
             <MDBModalFooter>
-                <MDBBtn color="dark" onClick={this.toggle(8)}>Close</MDBBtn>
+                <MDBBtn color="dark" onClick={this.toggle(8)}>Close&nbsp;&nbsp;<MDBIcon icon="times" /></MDBBtn>
             </MDBModalFooter>
          </MDBModal>
 
