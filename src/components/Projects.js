@@ -36,8 +36,8 @@ class ProjectsPage extends Component {
             this.setState({ siteurl: "" });
         }
         else if(nr==="gocinema"){
-            this.setState({ title: "GOCINEMA", piclength: 2 });
-            this.setState({ images: ["p3-1.png","p3-2.jpg"] });
+            this.setState({ title: "GOCINEMA", piclength: 3 });
+            this.setState({ images: ["p3-1.png","p3-2.jpg","p3-3.jpg"] });
             this.setState({ summary: "An online movie information site to provide details about movies in 8 different languages. The information includes cast & crew, reviews, posters, trailers, songs and latest news. Also an backend site is developed inorder to add or update data in the database for the movies. Modules like location tracking, Add to favourites, Itunes api and interactive web design were implemented. " });
             this.setState({ technologies: ["PHP","MYSQL","JQUERY","JAVASCRIPT","BOOTSTRAP","AWS", "REST API", "JSON WEB SERVICES" ] });
             this.setState({ role: "BACKEND DEVELOPER" });
@@ -112,7 +112,7 @@ class ProjectsPage extends Component {
             <MDBModalHeader toggle={this.toggle(8)}><strong className='font-weight-bold text-center text-danger'>{this.state.title}</strong></MDBModalHeader>
             <MDBModalBody>
             <MDBRow className="justify-content-center">
-            <MDBCol size="5" sm="5">
+            <MDBCol size="12" lg="6" md="12" sm="12" xs="12">
                <h6 className="font-weight-bold text-left mt-4 text-primary">SUMMARY</h6>
                <p className="font-weight-bolder text-justify">{this.state.summary}</p> 
                
@@ -129,7 +129,7 @@ class ProjectsPage extends Component {
                 </ul>
 
             </MDBCol>
-            <MDBCol size="12" lg="6" md="6" sm="12" xs="12">
+            <MDBCol size="12" lg="6" md="12" sm="12" xs="12">
                 <MDBCarousel activeItem={1} length={this.state.piclength} showControls={true} showIndicators={true} className="z-depth-1" >
                   <MDBCarouselInner>
                   {this.state.images.map((item,i) => (
@@ -204,7 +204,7 @@ class ProjectsPage extends Component {
             <MDBCarouselInner>
                 <MDBCarouselItem itemId="1">
                 <MDBView>
-                    <img className="d-block w-100" src={process.env.PUBLIC_URL + '/screenshots/p3-1.png'} alt="First slide" style={ {height:'300px'}} />
+                    <img className="d-block w-100" src={process.env.PUBLIC_URL + '/screenshots/p3.jpg'} alt="First slide" style={ {height:'300px'}} />
                 <MDBMask overlay="black-light" />
                 </MDBView>
                 </MDBCarouselItem>
